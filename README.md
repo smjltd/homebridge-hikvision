@@ -6,6 +6,9 @@ Homebridge plugin that connects to your HikVision DVR and exposes your cameras i
 
 This plugin will automatically discover all cameras connected to your DVR and will expose them to homebridge. You will get access to stream video (including sound) directly from your home app, will get push notification with screenshots of the motion events - this needs to be configured in HikVision DVR and additionally in Home app under home settings - you will need to enable notifications.
 
+## Intent
+This is fork from https://github.com/node-packages/homebridge-hikvision project the purpose to add support for cloudflare access, to be able to access remotely.
+
 ## Installation
 
 In order to use this plugin, you need to install `homebridge-camera-ffmpeg` and `homebridge-hikvision` as per below:
@@ -26,7 +29,9 @@ To configure, add this to your `config.json` for homebridge under platforms node
       "host": "nvr-host",
       "port": 443,
       "username": "admin",
-      "password": "very-secure-password"
+      "password": "very-secure-password",
+      "cf_id":"CF-Access-Client-Id:",
+      "cf_secrect":"CF-Access-Client-Secret"
     }
   ]
 }

@@ -13,6 +13,8 @@ export interface HikVisionNvrApiConfiguration extends PlatformConfig {
   username: string
   password: string
   debugFfmpeg: boolean
+  cf_id: string
+  cf_secrect: string
 }
 
 export class HikvisionApi {
@@ -24,7 +26,11 @@ export class HikvisionApi {
       baseURL: `http${config.secure ? 's' : ''}://${config.host}:${config.port}`,
       httpsAgent: new https.Agent({
         rejectUnauthorized: !config.ignoreInsecureTls
-      })
+      }),
+      headers:{
+        'CF-Access-Client-Id' : config.secure,
+        'CF-Access-Client-Secret': config.cf_secrect,
+      }
     });
     this._http = new AxiosDigest(config.username, config.password, _axios);
     this._parser = new Parser({ explicitArray: false })
