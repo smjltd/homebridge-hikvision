@@ -1,11 +1,11 @@
 {
-  "name": "@ferronrsmith/homebridge-hikvision",
-  "version": "1.2.1",
+  "name": "@smj/homebridge-hikvision",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/node-packages/homebridge-hikvision"
+    "url": "https://github.com/smjltd/homebridge-hikvision"
   },
   "dependencies": {
     "axios-digest": "^0.1.1",
