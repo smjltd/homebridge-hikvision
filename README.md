@@ -14,7 +14,7 @@ This is fork from https://github.com/node-packages/homebridge-hikvision project 
 In order to use this plugin, you need to install `homebridge-camera-ffmpeg` and `homebridge-hikvision` as per below:
 
 ```bash
-sudo npm install -g homebridge-camera-ffmpeg @ferronrsmith/homebridge-hikvision --unsafe-perm
+sudo npm install -g homebridge-camera-ffmpeg @xarrar/homebridge-hikvision --unsafe-perm
 ```
 
 ## Configuration
