@@ -1,6 +1,5 @@
 .homebridge*/
 .vscode*/
-dist/
 node_modules/
 .idea
 yarn-error.log
