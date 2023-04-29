@@ -92,7 +92,7 @@ export class HikVisionCamera {
     const cameraConfig = <CameraConfig> {
       name: accessory.displayName,
       videoConfig: {
-        source: `-rtsp_transport tcp -i rtsp://${accessory.context.username}:${accessory.context.password}@${accessory.context.host}/Streaming/Channels/${channelId}01`,
+        source: `-rtsp_transport tcp -i rtsp://${accessory.context.username}:${accessory.context.password}@${accessory.context.host}/Streaming/Channels/${channelId}02`,
         stillImageSource: `-i http${accessory.context.secure ? "s" : ""}://${
           accessory.context.username
         }:${accessory.context.password}@${
